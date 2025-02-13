@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class=" d-flex justify-content-center align-items-center my-4" style="flex-direction:column;">  
+    <h3>Update Record</h3><br>
+   <form method="post" class="w-50">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-secondary">Update Record</button>
+   </form>
+   
+</div>
+{% endblock content %}  
+  
+
